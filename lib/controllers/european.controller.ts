@@ -132,7 +132,7 @@ export class EuropeanController extends SessionController {
         headers: {
           'Authorization': EU_CONSTANTS.basicToken,
           'Content-Type': 'application/x-www-form-urlencoded',
-          'Content-Length': '154',
+          'Content-Length': '150',
           'Host': 'prd.eu-ccapi.kia.com:8080',
           'Connection': 'Keep-Alive',
           'Accept-Encoding': 'gzip',
