@@ -1,5 +1,5 @@
 {
-  "name": "bluelinky",
+  "name": "kuvork",
   "version": "5.1.0",
   "description": "",
   "main": "dist/index.js",
@@ -13,7 +13,7 @@
     "test-ca": "npm run build && node test-ca.js",
     "watch": "tsc -w"
   },
-  "author": "Hacksore",
+  "author": "plips-nl",
   "license": "MIT",
   "dependencies": {
     "got": "^9.6.0",
@@ -27,7 +27,7 @@
       "pre-commit": "npm run lint"
     }
   },
-  "homepage": "https://github.com/Hacksore/bluelinky",
+  "homepage": "https://github.com/plips-nl/kuvork",
   "devDependencies": {
     "@babel/core": "^7.10.4",
     "@babel/preset-env": "^7.10.4",

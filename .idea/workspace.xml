@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ef84275-f6af-480b-94d9-07aab8ebd0c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/lib/constants/europe.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/constants/europe.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/controllers/european.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/controllers/european.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
