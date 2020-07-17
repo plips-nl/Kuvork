@@ -1,4 +1,4 @@
-import { EU_CONSTANTS, EU_BASE_URL } from './../constants/europe';
+import { EU_CONSTANTS, EU_BASE_URL, EU_BASE_HOST, EU_CONTENT_LENGTH, EU_CLIENT_ID } from './../constants/europe';
 import { BlueLinkyConfig, Session } from './../interfaces/common.interfaces';
 import * as pr from 'push-receiver';
 import got from 'got';
@@ -99,10 +99,10 @@ export class EuropeanController extends SessionController {
       const notificationReponse = await got(`${EU_BASE_URL}/api/v1/spa/notifications/register`, {
         method: 'POST',
         headers: {
-          'ccsp-service-id': 'fdc85c00-0a2f-4c64-bcb4-2cfb1500730a',
+          'ccsp-service-id': EU_CLIENT_ID,
           'Content-Type': 'application/json;charset=UTF-8',
           'Content-Length': '231',
-          'Host': 'prd.eu-ccapi.kia.com:8080',
+          'Host': EU_BASE_HOST,
           'Connection': 'Keep-Alive',
           'Accept-Encoding': 'gzip',
           'User-Agent': 'okhttp/3.10.0',
@@ -132,8 +132,8 @@ export class EuropeanController extends SessionController {
         headers: {
           'Authorization': EU_CONSTANTS.basicToken,
           'Content-Type': 'application/x-www-form-urlencoded',
-          'Content-Length': '150',
-          'Host': 'prd.eu-ccapi.kia.com:8080',
+          'Content-Length': EU_CONTENT_LENGTH,
+          'Host': EU_BASE_HOST,
           'Connection': 'Keep-Alive',
           'Accept-Encoding': 'gzip',
           'User-Agent': 'okhttp/3.10.0',
