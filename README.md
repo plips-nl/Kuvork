@@ -1,6 +1,6 @@
-# bluelinky
+# kuvork
 
-An unoffcial nodejs API wrapper for Kia UVO derived from Hyundai BlueLink 
+An unoffcial nodejs API wrapper for Kia UVO forked from Hyundai BlueLink 
 
 [![CI](https://img.shields.io/circleci/build/github/Hacksore/bluelinky.svg)](https://circleci.com/gh/Hacksore/bluelinky/tree/master)
 [![npm](https://img.shields.io/npm/v/bluelinky.svg)](https://www.npmjs.com/package/bluelinky)
