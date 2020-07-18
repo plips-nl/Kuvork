@@ -213,6 +213,7 @@ export default class EuropeanVehicle extends Vehicle {
         range: vehicleStatus.evStatus.drvDistance[0].rangeByFuel.totalAvailableRange.value,
         charging: vehicleStatus?.evStatus?.batteryCharge,
         batteryCharge: vehicleStatus?.battery?.batSoc,
+        EVBatteryCharge: vehicleStatus?.evStatus?.batteryStatus,
       },
     };
 

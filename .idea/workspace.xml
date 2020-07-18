@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ef84275-f6af-480b-94d9-07aab8ebd0c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="5ef84275-f6af-480b-94d9-07aab8ebd0c8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,27 +45,35 @@
       <option name="project" value="LOCAL" />
       <updated>1594981859174</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="publishing">
+      <created>1594987351633</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1594987351633</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changed from Hyundai constants to Kia constants" />
     <MESSAGE value="Changed from Hyundai constants to Kia constants, all relevant constants moved to constants/europe.ts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed from Hyundai constants to Kia constants, all relevant constants moved to constants/europe.ts" />
+    <MESSAGE value="publishing" />
+    <option name="LAST_COMMIT_MESSAGE" value="publishing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1050" y="394" width="761" height="427" key="#com.intellij.ide.actionMacro.EditMacrosDialog" timestamp="1594983958572">
       <screen x="0" y="23" width="1920" height="1004" />
     </state>
     <state x="1050" y="394" width="761" height="427" key="#com.intellij.ide.actionMacro.EditMacrosDialog/0.23.1920.1004@0.23.1920.1004" timestamp="1594983958572" />
-    <state x="0" y="23" width="1920" height="1004" key="CommitChangelistDialog2" timestamp="1594985875684">
+    <state x="0" y="23" width="1920" height="1004" key="CommitChangelistDialog2" timestamp="1594987337405">
       <screen x="0" y="23" width="1920" height="1004" />
     </state>
-    <state x="0" y="23" width="1920" height="1004" key="CommitChangelistDialog2/0.23.1920.1004@0.23.1920.1004" timestamp="1594985875684" />
-    <state x="1032" y="463" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594985836683">
+    <state x="0" y="23" width="1920" height="1004" key="CommitChangelistDialog2/0.23.1920.1004@0.23.1920.1004" timestamp="1594987337405" />
+    <state x="1032" y="463" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594987152751">
       <screen x="0" y="23" width="1920" height="1004" />
     </state>
-    <state x="1032" y="463" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1920.1004@0.23.1920.1004" timestamp="1594985836683" />
+    <state x="1032" y="463" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1920.1004@0.23.1920.1004" timestamp="1594987152751" />
     <state x="945" y="268" width="598" height="548" key="find.popup" timestamp="1594984216963">
       <screen x="0" y="23" width="1920" height="1004" />
     </state>
