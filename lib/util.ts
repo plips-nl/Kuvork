@@ -69,6 +69,10 @@ export const getTempCode = (temperature: number): string => {
 
 export const getTempFromCode = (code: string): number => {
   switch (code) {
+    case '00H':
+      return 14.0;
+    case '01H':
+      return 14.5;
     case '02H':
       return 15.0;
     case '03H':
