@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ef84275-f6af-480b-94d9-07aab8ebd0c8" name="Default Changelist" comment="" />
+    <list default="true" id="5ef84275-f6af-480b-94d9-07aab8ebd0c8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/constants/canada.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/constants/canada.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/constants/europe.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/constants/europe.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/controllers/european.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/controllers/european.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/vehicles/european.vehicle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vehicles/european.vehicle.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595075985661</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="patched bug in 00H and 01H">
+      <created>1595076540273</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1595076540273</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -74,25 +89,33 @@
     <MESSAGE value="Changed from Hyundai constants to Kia constants, all relevant constants moved to constants/europe.ts" />
     <MESSAGE value="publishing" />
     <MESSAGE value="added EVBatteryCharge (SoC)" />
-    <option name="LAST_COMMIT_MESSAGE" value="added EVBatteryCharge (SoC)" />
+    <MESSAGE value="patched bug in 00H and 01H" />
+    <option name="LAST_COMMIT_MESSAGE" value="patched bug in 00H and 01H" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1050" y="394" width="761" height="427" key="#com.intellij.ide.actionMacro.EditMacrosDialog" timestamp="1594983958572">
       <screen x="0" y="23" width="1920" height="1004" />
     </state>
     <state x="1050" y="394" width="761" height="427" key="#com.intellij.ide.actionMacro.EditMacrosDialog/0.23.1920.1004@0.23.1920.1004" timestamp="1594983958572" />
-    <state x="0" y="23" width="1920" height="1004" key="CommitChangelistDialog2" timestamp="1595075982465">
-      <screen x="0" y="23" width="1680" height="974" />
+    <state x="1680" y="-223" width="2560" height="1364" key="CommitChangelistDialog2" timestamp="1595935708042">
+      <screen x="1680" y="-223" width="2560" height="1364" />
     </state>
     <state x="0" y="23" width="1920" height="1004" key="CommitChangelistDialog2/0.23.1920.1004@0.23.1920.1004" timestamp="1594987337405" />
-    <state x="0" y="23" key="CommitChangelistDialog2/1680.23.1920.1057/0.23.1680.974@0.23.1680.974" timestamp="1595075982465" />
-    <state x="1032" y="463" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594987152751">
-      <screen x="0" y="23" width="1920" height="1004" />
+    <state x="1680" y="-223" width="2560" height="1364" key="CommitChangelistDialog2/1680.-223.2560.1364/0.23.1680.1027@1680.-223.2560.1364" timestamp="1595935708042" />
+    <state x="0" y="23" key="CommitChangelistDialog2/1680.23.1920.1057/0.23.1680.974@0.23.1680.974" timestamp="1595076537553" />
+    <state x="3056" y="375" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595935782170">
+      <screen x="1680" y="-223" width="2560" height="1364" />
     </state>
     <state x="1032" y="463" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1920.1004@0.23.1920.1004" timestamp="1594987152751" />
-    <state x="945" y="268" width="598" height="548" key="find.popup" timestamp="1594984216963">
-      <screen x="0" y="23" width="1920" height="1004" />
+    <state x="3056" y="375" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1680.-223.2560.1364/0.23.1680.1027@1680.-223.2560.1364" timestamp="1595935782170" />
+    <state x="2790" y="110" width="1450" height="745" key="find.popup" timestamp="1595935512264">
+      <screen x="1680" y="-223" width="2560" height="1364" />
     </state>
-    <state x="945" y="268" width="598" height="548" key="find.popup/0.23.1920.1004@0.23.1920.1004" timestamp="1594984216963" />
+    <state x="555" y="261" width="1082" height="533" key="find.popup/0.23.1680.974@0.23.1680.974" timestamp="1595184119742" />
+    <state x="833" y="268" width="1087" height="548" key="find.popup/0.23.1920.1004@0.23.1920.1004" timestamp="1595346510909" />
+    <state x="2790" y="110" width="1450" height="745" key="find.popup/1680.-223.2560.1364/0.23.1680.1027@1680.-223.2560.1364" timestamp="1595935512264" />
+    <state x="555" y="257" width="846" height="574" key="find.popup/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595089813783" />
+    <state x="555" y="274" width="846" height="562" key="find.popup/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595090339850" />
+    <state x="827" y="261" width="574" height="532" key="find.popup/1680.23.1920.1057/0.23.1680.974@0.23.1680.974" timestamp="1595077090884" />
   </component>
 </project>
