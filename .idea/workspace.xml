@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ef84275-f6af-480b-94d9-07aab8ebd0c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/constants/canada.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/constants/canada.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/constants/europe.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/constants/europe.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/controllers/european.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/controllers/european.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/vehicles/european.vehicle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vehicles/european.vehicle.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="5ef84275-f6af-480b-94d9-07aab8ebd0c8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +73,21 @@
       <option name="project" value="LOCAL" />
       <updated>1595076540273</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Support for Kia in Canada. Kia-Hyundai differences only in constants files. Not in code anymore.&#10;Entered extra (unparsed) option in debug.js">
+      <created>1595935718457</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1595935718458</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Support for Kia in Canada. Kia-Hyundai differences only in constants files. Not in code anymore.&#10;Entered extra (unparsed) option in debug.js">
+      <created>1595935897300</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1595935897300</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -90,7 +96,8 @@
     <MESSAGE value="publishing" />
     <MESSAGE value="added EVBatteryCharge (SoC)" />
     <MESSAGE value="patched bug in 00H and 01H" />
-    <option name="LAST_COMMIT_MESSAGE" value="patched bug in 00H and 01H" />
+    <MESSAGE value="Support for Kia in Canada. Kia-Hyundai differences only in constants files. Not in code anymore.&#10;Entered extra (unparsed) option in debug.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Support for Kia in Canada. Kia-Hyundai differences only in constants files. Not in code anymore.&#10;Entered extra (unparsed) option in debug.js" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1050" y="394" width="761" height="427" key="#com.intellij.ide.actionMacro.EditMacrosDialog" timestamp="1594983958572">
