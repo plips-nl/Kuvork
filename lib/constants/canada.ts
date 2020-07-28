@@ -1,5 +1,5 @@
 export const CLIENT_ORIGIN = 'SPA';
-export const CA_BASE_URL = 'https://mybluelink.ca';
+export const CA_BASE_URL = 'https://myuvo.ca';
 
 export const CA_ENDPOINTS = {
     login: `${CA_BASE_URL}/tods/api/lgn`,

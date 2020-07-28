@@ -184,7 +184,7 @@ export default class EuropeanVehicle extends Vehicle {
         hoodOpen: vehicleStatus.hoodOpen,
         trunkOpen: vehicleStatus.trunkOpen,
         locked: vehicleStatus.doorLock,
-        doors: {
+        openDoors: {
           frontRight: !!vehicleStatus.doorOpen.frontRight,
           frontLeft: !!vehicleStatus.doorOpen.frontLeft,
           backLeft: !!vehicleStatus.doorOpen.backLeft,
@@ -195,7 +195,7 @@ export default class EuropeanVehicle extends Vehicle {
           frontLeft: !!vehicleStatus.tirePressureLamp.tirePressureLampFL,
           frontRight: !!vehicleStatus.tirePressureLamp.tirePressureLampFR,
           rearRight: !!vehicleStatus.tirePressureLamp.tirePressureLampRR,
-          all: !!vehicleStatus.tirePressureLamp.tirePressureLampAll,
+          all: !!vehicleStatus.tirePressureLamp.tirePressureWarningLampAll,
         },
       },
       climate: {
@@ -215,7 +215,7 @@ export default class EuropeanVehicle extends Vehicle {
         batteryCharge: vehicleStatus?.battery?.batSoc,
         EVBatteryCharge: vehicleStatus?.evStatus?.batteryStatus,
       },
-    };
+    } as VehicleStatus;
 
     this._status = input.parsed ? parsedStatus : vehicleStatus;
 

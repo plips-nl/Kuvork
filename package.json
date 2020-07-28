@@ -1,6 +1,6 @@
 {
   "name": "kuvork",
-  "version": "5.2.1",
+  "version": "5.3.0",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -11,6 +11,7 @@ const apiCalls = [
   { name: 'odometer', value: 'odometer' },
   { name: 'stop', value: 'stop' },
   { name: 'status (on bluelink cache)', value: 'status' },
+  { name: 'status (on bluelink cache) unparsed', value: 'statusU' },
   { name: 'status refresh (fetch vehicle)', value: 'statusR' },
   { name: 'lock', value: 'lock' },
   { name: 'unlock', value: 'unlock' },
@@ -103,6 +104,13 @@ async function performCommand(command) {
           parsed: true
         });
         console.log('status remote : ' + JSON.stringify(statusR, null, 2));
+        break;
+      case 'statusU':
+        const statusU = await vehicle.status({
+          refresh: false,
+          parsed: false
+        });
+        console.log('status remote : ' + JSON.stringify(statusU, null, 2));
         break;
       case 'start':
         const startRes = await vehicle.start({
