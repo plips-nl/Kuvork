@@ -255,8 +255,8 @@ export default class EuropeanVehicle extends Vehicle {
         json: true,
       }
     );
-
-    const data = response.body.resMsg.gpsDetail;
+    
+    const data = response.body.resMsg.gpsDetail || response.body.resMsg;
     this._location = {
       latitude: data.coord.lat,
       longitude: data.coord.lon,
