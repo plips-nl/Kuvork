@@ -210,7 +210,7 @@ export default class EuropeanVehicle extends Vehicle {
       engine: {
         ignition: vehicleStatus.engine,
         adaptiveCruiseControl: vehicleStatus.acc,
-        range: vehicleStatus.evStatus.drvDistance[0].rangeByFuel.totalAvailableRange.value,
+        range: vehicleStatus?.evStatus?.drvDistance[0].rangeByFuel.totalAvailableRange.value,
         charging: vehicleStatus?.evStatus?.batteryCharge,
         batteryCharge: vehicleStatus?.battery?.batSoc,
         EVBatteryCharge: vehicleStatus?.evStatus?.batteryStatus,
