@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ef84275-f6af-480b-94d9-07aab8ebd0c8" name="Default Changelist" comment="made evstatus optional">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="5ef84275-f6af-480b-94d9-07aab8ebd0c8" name="Default Changelist" comment="change for location API in eg the Niro plugin hybrid">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.npmignore" beforeDir="false" afterPath="$PROJECT_DIR$/.npmignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/vehicles/european.vehicle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vehicles/european.vehicle.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596534675408</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="change for location API in eg the Niro plugin hybrid">
+      <created>1596552275321</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1596552275321</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -119,17 +123,18 @@
     <MESSAGE value="patched bug in 00H and 01H" />
     <MESSAGE value="Support for Kia in Canada. Kia-Hyundai differences only in constants files. Not in code anymore.&#10;Entered extra (unparsed) option in debug.js" />
     <MESSAGE value="made evstatus optional" />
-    <option name="LAST_COMMIT_MESSAGE" value="made evstatus optional" />
+    <MESSAGE value="change for location API in eg the Niro plugin hybrid" />
+    <option name="LAST_COMMIT_MESSAGE" value="change for location API in eg the Niro plugin hybrid" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1050" y="394" width="761" height="427" key="#com.intellij.ide.actionMacro.EditMacrosDialog" timestamp="1594983958572">
       <screen x="0" y="23" width="1920" height="1004" />
     </state>
     <state x="1050" y="394" width="761" height="427" key="#com.intellij.ide.actionMacro.EditMacrosDialog/0.23.1920.1004@0.23.1920.1004" timestamp="1594983958572" />
-    <state x="0" y="23" width="2560" height="1364" key="CommitChangelistDialog2" timestamp="1596535390309">
+    <state x="0" y="23" width="2560" height="1364" key="CommitChangelistDialog2" timestamp="1596552265884">
       <screen x="0" y="23" width="1920" height="1004" />
     </state>
-    <state x="0" y="23" width="1920" height="1004" key="CommitChangelistDialog2/0.23.1920.1004@0.23.1920.1004" timestamp="1596535390309" />
+    <state x="0" y="23" width="1920" height="1004" key="CommitChangelistDialog2/0.23.1920.1004@0.23.1920.1004" timestamp="1596552265884" />
     <state x="1680" y="-223" width="2560" height="1364" key="CommitChangelistDialog2/1680.-223.2560.1364/0.23.1680.1027@1680.-223.2560.1364" timestamp="1595936096076" />
     <state x="0" y="23" key="CommitChangelistDialog2/1680.23.1920.1057/0.23.1680.974@0.23.1680.974" timestamp="1595076537553" />
     <state x="2707" y="216" key="Vcs.Push.Dialog.v2" timestamp="1595936122194">
@@ -141,10 +146,10 @@
     </state>
     <state x="1032" y="463" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1920.1004@0.23.1920.1004" timestamp="1594987152751" />
     <state x="3056" y="375" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1680.-223.2560.1364/0.23.1680.1027@1680.-223.2560.1364" timestamp="1595935987226" />
-    <state x="624" y="268" width="1296" height="715" key="find.popup" timestamp="1596551859645">
-      <screen x="0" y="23" width="1920" height="1004" />
+    <state x="285" y="292" width="1359" height="691" key="find.popup" timestamp="1598382141740">
+      <screen x="0" y="23" width="1680" height="974" />
     </state>
-    <state x="555" y="261" width="1082" height="533" key="find.popup/0.23.1680.974@0.23.1680.974" timestamp="1595184119742" />
+    <state x="285" y="292" width="1359" height="691" key="find.popup/0.23.1680.974@0.23.1680.974" timestamp="1598382141740" />
     <state x="624" y="268" width="1296" height="715" key="find.popup/0.23.1920.1004@0.23.1920.1004" timestamp="1596551859645" />
     <state x="2655" y="198" width="1450" height="745" key="find.popup/1680.-223.2560.1364/0.23.1680.1027@1680.-223.2560.1364" timestamp="1596034318433" />
     <state x="2655" y="198" width="1450" height="787" key="find.popup/1680.-246.2560.1440/0.0.1680.1050@1680.-246.2560.1440" timestamp="1596036584770" />
