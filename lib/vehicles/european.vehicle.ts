@@ -174,46 +174,44 @@ export default class EuropeanVehicle extends Vehicle {
       }
     );
 
-    let vehicleStatus;
-
-    if (statusConfig.refresh) vehicleStatus = response.body.resMsg;
-    else vehicleStatus = response.body.resMsg.vehicleStatusInfo.vehicleStatus;
+    // handles refreshing data
+    const vehicleStatus = statusConfig.refresh ? response.body.resMsg : response.body.resMsg.vehicleStatusInfo.vehicleStatus;
 
     const parsedStatus = {
       chassis: {
-        hoodOpen: vehicleStatus.hoodOpen,
-        trunkOpen: vehicleStatus.trunkOpen,
+        hoodOpen: vehicleStatus?.hoodOpen,
+        trunkOpen: vehicleStatus?.trunkOpen,
         locked: vehicleStatus.doorLock,
         openDoors: {
-          frontRight: !!vehicleStatus.doorOpen.frontRight,
-          frontLeft: !!vehicleStatus.doorOpen.frontLeft,
-          backLeft: !!vehicleStatus.doorOpen.backLeft,
-          backRight: !!vehicleStatus.doorOpen.backRight,
+          frontRight: !!vehicleStatus?.doorOpen?.frontRight,
+          frontLeft: !!vehicleStatus?.doorOpen?.frontLeft,
+          backLeft: !!vehicleStatus?.doorOpen?.backLeft,
+          backRight: !!vehicleStatus?.doorOpen?.backRight,
         },
         tirePressureWarningLamp: {
-          rearLeft: !!vehicleStatus.tirePressureLamp.tirePressureLampRL,
-          frontLeft: !!vehicleStatus.tirePressureLamp.tirePressureLampFL,
-          frontRight: !!vehicleStatus.tirePressureLamp.tirePressureLampFR,
-          rearRight: !!vehicleStatus.tirePressureLamp.tirePressureLampRR,
-          all: !!vehicleStatus.tirePressureLamp.tirePressureWarningLampAll,
+          rearLeft: !!vehicleStatus?.tirePressureLamp?.tirePressureLampRL,
+          frontLeft: !!vehicleStatus?.tirePressureLamp?.tirePressureLampFL,
+          frontRight: !!vehicleStatus?.tirePressureLamp?.tirePressureLampFR,
+          rearRight: !!vehicleStatus?.tirePressureLamp?.tirePressureLampRR,
+          all: !!vehicleStatus?.tirePressureLamp?.tirePressureWarningLampAll,
         },
       },
       climate: {
-        active: vehicleStatus.airCtrlOn,
-        steeringwheelHeat: !!vehicleStatus.steerWheelHeat,
+        active: vehicleStatus?.airCtrlOn,
+        steeringwheelHeat: !!vehicleStatus?.steerWheelHeat,
         sideMirrorHeat: false,
-        rearWindowHeat: !!vehicleStatus.sideBackWindowHeat,
-        defrost: vehicleStatus.defrost,
-        temperatureSetpoint: getTempFromCode(vehicleStatus.airTemp.value),
-        temperatureUnit: vehicleStatus.airTemp.unit,
+        rearWindowHeat: !!vehicleStatus?.sideBackWindowHeat,
+        defrost: vehicleStatus?.defrost,
+        temperatureSetpoint: getTempFromCode(vehicleStatus?.airTemp?.value),
+        temperatureUnit: vehicleStatus?.airTemp?.unit,
       },
       engine: {
         ignition: vehicleStatus.engine,
-        adaptiveCruiseControl: vehicleStatus.acc,
-        range: vehicleStatus?.evStatus?.drvDistance[0].rangeByFuel.totalAvailableRange.value,
+        adaptiveCruiseControl: vehicleStatus?.acc,
+        range: vehicleStatus?.evStatus?.drvDistance[0].rangeByFuel?.totalAvailableRange?.value,
         charging: vehicleStatus?.evStatus?.batteryCharge,
-        batteryCharge: vehicleStatus?.battery?.batSoc,
-        EVBatteryCharge: vehicleStatus?.evStatus?.batteryStatus,
+        batteryCharge12v: vehicleStatus?.battery?.batSoc,
+        batteryChargeHV: vehicleStatus?.evStatus?.batteryStatus,
       },
     } as VehicleStatus;
 
@@ -255,8 +253,8 @@ export default class EuropeanVehicle extends Vehicle {
         json: true,
       }
     );
-    
-    const data = response.body.resMsg.gpsDetail || response.body.resMsg;
+
+    const data = response.body.resMsg.gpsDetail;
     this._location = {
       latitude: data.coord.lat,
       longitude: data.coord.lon,
@@ -270,7 +268,7 @@ export default class EuropeanVehicle extends Vehicle {
 
     return Promise.resolve(this._location);
   }
-  
+
   public async startCharge(): Promise<string> {
     await this.checkControlToken();
     const response = await got(

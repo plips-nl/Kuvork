@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ef84275-f6af-480b-94d9-07aab8ebd0c8" name="Default Changelist" comment="change for location API in eg the Niro plugin hybrid">
+    <list default="true" id="5ef84275-f6af-480b-94d9-07aab8ebd0c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/vehicles/american.vehicle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vehicles/american.vehicle.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/vehicles/canadian.vehicle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vehicles/canadian.vehicle.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/vehicles/european.vehicle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vehicles/european.vehicle.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +24,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -112,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596552275321</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added start and stop charging calls for (PH)EVs'">
+      <created>1598880824552</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1598880824552</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -124,33 +135,34 @@
     <MESSAGE value="Support for Kia in Canada. Kia-Hyundai differences only in constants files. Not in code anymore.&#10;Entered extra (unparsed) option in debug.js" />
     <MESSAGE value="made evstatus optional" />
     <MESSAGE value="change for location API in eg the Niro plugin hybrid" />
-    <option name="LAST_COMMIT_MESSAGE" value="change for location API in eg the Niro plugin hybrid" />
+    <MESSAGE value="added start and stop charging calls for (PH)EVs'" />
+    <option name="LAST_COMMIT_MESSAGE" value="added start and stop charging calls for (PH)EVs'" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1050" y="394" width="761" height="427" key="#com.intellij.ide.actionMacro.EditMacrosDialog" timestamp="1594983958572">
       <screen x="0" y="23" width="1920" height="1004" />
     </state>
     <state x="1050" y="394" width="761" height="427" key="#com.intellij.ide.actionMacro.EditMacrosDialog/0.23.1920.1004@0.23.1920.1004" timestamp="1594983958572" />
-    <state x="0" y="23" width="2560" height="1364" key="CommitChangelistDialog2" timestamp="1596552265884">
+    <state x="0" y="23" width="2560" height="1364" key="CommitChangelistDialog2" timestamp="1598880819254">
       <screen x="0" y="23" width="1920" height="1004" />
     </state>
-    <state x="0" y="23" width="1920" height="1004" key="CommitChangelistDialog2/0.23.1920.1004@0.23.1920.1004" timestamp="1596552265884" />
+    <state x="0" y="23" width="1920" height="1004" key="CommitChangelistDialog2/0.23.1920.1004@0.23.1920.1004" timestamp="1598880819254" />
     <state x="1680" y="-223" width="2560" height="1364" key="CommitChangelistDialog2/1680.-223.2560.1364/0.23.1680.1027@1680.-223.2560.1364" timestamp="1595936096076" />
     <state x="0" y="23" key="CommitChangelistDialog2/1680.23.1920.1057/0.23.1680.974@0.23.1680.974" timestamp="1595076537553" />
     <state x="2707" y="216" key="Vcs.Push.Dialog.v2" timestamp="1595936122194">
       <screen x="1680" y="-223" width="2560" height="1364" />
     </state>
     <state x="2707" y="216" key="Vcs.Push.Dialog.v2/1680.-223.2560.1364/0.23.1680.1027@1680.-223.2560.1364" timestamp="1595936122194" />
-    <state x="3056" y="375" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595935987226">
-      <screen x="1680" y="-223" width="2560" height="1364" />
+    <state x="1032" y="463" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598880769202">
+      <screen x="0" y="23" width="1920" height="1004" />
     </state>
-    <state x="1032" y="463" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1920.1004@0.23.1920.1004" timestamp="1594987152751" />
+    <state x="1032" y="463" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1920.1004@0.23.1920.1004" timestamp="1598880769202" />
     <state x="3056" y="375" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1680.-223.2560.1364/0.23.1680.1027@1680.-223.2560.1364" timestamp="1595935987226" />
-    <state x="285" y="292" width="1359" height="691" key="find.popup" timestamp="1598382141740">
-      <screen x="0" y="23" width="1680" height="974" />
+    <state x="129" y="154" width="1296" height="715" key="find.popup" timestamp="1599489646214">
+      <screen x="0" y="23" width="1920" height="1004" />
     </state>
     <state x="285" y="292" width="1359" height="691" key="find.popup/0.23.1680.974@0.23.1680.974" timestamp="1598382141740" />
-    <state x="624" y="268" width="1296" height="715" key="find.popup/0.23.1920.1004@0.23.1920.1004" timestamp="1596551859645" />
+    <state x="129" y="154" width="1296" height="715" key="find.popup/0.23.1920.1004@0.23.1920.1004" timestamp="1599489646214" />
     <state x="2655" y="198" width="1450" height="745" key="find.popup/1680.-223.2560.1364/0.23.1680.1027@1680.-223.2560.1364" timestamp="1596034318433" />
     <state x="2655" y="198" width="1450" height="787" key="find.popup/1680.-246.2560.1440/0.0.1680.1050@1680.-246.2560.1440" timestamp="1596036584770" />
     <state x="2655" y="198" width="1450" height="787" key="find.popup/1680.-246.2560.1440/0.23.1680.1027@1680.-246.2560.1440" timestamp="1596034703438" />
