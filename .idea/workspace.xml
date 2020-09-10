@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ef84275-f6af-480b-94d9-07aab8ebd0c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/vehicles/american.vehicle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vehicles/american.vehicle.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/vehicles/canadian.vehicle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vehicles/canadian.vehicle.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/vehicles/european.vehicle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vehicles/european.vehicle.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598880824552</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="corrected bugs according to issue 63 of BlueLinky&#10;renamed EV battery status to batteryChargeHV">
+      <created>1599722320042</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1599722320042</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -136,28 +140,29 @@
     <MESSAGE value="made evstatus optional" />
     <MESSAGE value="change for location API in eg the Niro plugin hybrid" />
     <MESSAGE value="added start and stop charging calls for (PH)EVs'" />
-    <option name="LAST_COMMIT_MESSAGE" value="added start and stop charging calls for (PH)EVs'" />
+    <MESSAGE value="corrected bugs according to issue 63 of BlueLinky&#10;renamed EV battery status to batteryChargeHV" />
+    <option name="LAST_COMMIT_MESSAGE" value="corrected bugs according to issue 63 of BlueLinky&#10;renamed EV battery status to batteryChargeHV" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1050" y="394" width="761" height="427" key="#com.intellij.ide.actionMacro.EditMacrosDialog" timestamp="1594983958572">
       <screen x="0" y="23" width="1920" height="1004" />
     </state>
     <state x="1050" y="394" width="761" height="427" key="#com.intellij.ide.actionMacro.EditMacrosDialog/0.23.1920.1004@0.23.1920.1004" timestamp="1594983958572" />
-    <state x="0" y="23" width="2560" height="1364" key="CommitChangelistDialog2" timestamp="1598880819254">
-      <screen x="0" y="23" width="1920" height="1004" />
+    <state x="1680" y="-223" width="2560" height="1364" key="CommitChangelistDialog2" timestamp="1599722313820">
+      <screen x="1680" y="-223" width="2560" height="1364" />
     </state>
     <state x="0" y="23" width="1920" height="1004" key="CommitChangelistDialog2/0.23.1920.1004@0.23.1920.1004" timestamp="1598880819254" />
-    <state x="1680" y="-223" width="2560" height="1364" key="CommitChangelistDialog2/1680.-223.2560.1364/0.23.1680.1027@1680.-223.2560.1364" timestamp="1595936096076" />
+    <state x="1680" y="-223" width="2560" height="1364" key="CommitChangelistDialog2/1680.-223.2560.1364/0.23.1680.1027@1680.-223.2560.1364" timestamp="1599722313820" />
     <state x="0" y="23" key="CommitChangelistDialog2/1680.23.1920.1057/0.23.1680.974@0.23.1680.974" timestamp="1595076537553" />
     <state x="2707" y="216" key="Vcs.Push.Dialog.v2" timestamp="1595936122194">
       <screen x="1680" y="-223" width="2560" height="1364" />
     </state>
     <state x="2707" y="216" key="Vcs.Push.Dialog.v2/1680.-223.2560.1364/0.23.1680.1027@1680.-223.2560.1364" timestamp="1595936122194" />
-    <state x="1032" y="463" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598880769202">
-      <screen x="0" y="23" width="1920" height="1004" />
+    <state x="3056" y="375" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599721950210">
+      <screen x="1680" y="-223" width="2560" height="1364" />
     </state>
     <state x="1032" y="463" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1920.1004@0.23.1920.1004" timestamp="1598880769202" />
-    <state x="3056" y="375" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1680.-223.2560.1364/0.23.1680.1027@1680.-223.2560.1364" timestamp="1595935987226" />
+    <state x="3056" y="375" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1680.-223.2560.1364/0.23.1680.1027@1680.-223.2560.1364" timestamp="1599721950210" />
     <state x="129" y="154" width="1296" height="715" key="find.popup" timestamp="1599489646214">
       <screen x="0" y="23" width="1920" height="1004" />
     </state>
