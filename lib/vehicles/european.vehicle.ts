@@ -25,10 +25,11 @@ export default class EuropeanVehicle extends Vehicle {
   }
 
   private async checkControlToken(): Promise<void> {
+    await this.controller.refreshAccessToken();
     if (this.controller.session?.controlTokenExpiresAt !== undefined) {
       if (
-        this.controller.session.controlToken === '' ||
-        new Date().getTime() > this.controller.session.controlTokenExpiresAt
+        !this.controller.session.controlToken ||
+        Date.now() / 1000 > this.controller.session.controlTokenExpiresAt
       ) {
         await this.controller.enterPin();
       }
@@ -62,7 +63,7 @@ export default class EuropeanVehicle extends Vehicle {
 
     logger.info(`Climate started for vehicle ${this.vehicleConfig.id}`);
 
-    return Promise.resolve(response.body);
+    return response.body;
   }
 
   public async stop(): Promise<string> {
@@ -92,7 +93,7 @@ export default class EuropeanVehicle extends Vehicle {
 
     logger.info(`Climate stopped for vehicle ${this.vehicleConfig.id}`);
 
-    return Promise.resolve(response.body);
+    return response.body;
   }
 
   public async lock(): Promise<string> {
@@ -116,10 +117,10 @@ export default class EuropeanVehicle extends Vehicle {
 
     if (response.statusCode === 200) {
       logger.debug(`Vehicle ${this.vehicleConfig.id} locked`);
-      return Promise.resolve('Lock successful');
+      return 'Lock successful';
     }
 
-    return Promise.reject('Something went wrong!');
+    return 'Something went wrong!';
   }
 
   public async unlock(): Promise<string> {
@@ -143,10 +144,10 @@ export default class EuropeanVehicle extends Vehicle {
 
     if (response.statusCode === 200) {
       logger.debug(`Vehicle ${this.vehicleConfig.id} unlocked`);
-      return Promise.resolve('Unlock successful');
+      return 'Unlock successful';
     }
 
-    return Promise.reject('Something went wrong!');
+    return 'Something went wrong!';
   }
 
   public async status(
@@ -175,7 +176,9 @@ export default class EuropeanVehicle extends Vehicle {
     );
 
     // handles refreshing data
-    const vehicleStatus = statusConfig.refresh ? response.body.resMsg : response.body.resMsg.vehicleStatusInfo.vehicleStatus;
+    const vehicleStatus = statusConfig.refresh
+      ? response.body.resMsg
+      : response.body.resMsg.vehicleStatusInfo.vehicleStatus;
 
     const parsedStatus = {
       chassis: {
@@ -217,7 +220,7 @@ export default class EuropeanVehicle extends Vehicle {
 
     this._status = input.parsed ? parsedStatus : vehicleStatus;
 
-    return Promise.resolve(this._status);
+    return this._status;
   }
 
   public async odometer(): Promise<VehicleOdometer | null> {
@@ -236,7 +239,7 @@ export default class EuropeanVehicle extends Vehicle {
     );
 
     this._odometer = response.body.resMsg.vehicleStatusInfo.odometer as VehicleOdometer;
-    return Promise.resolve(this._odometer);
+    return this._odometer;
   }
 
   public async location(): Promise<VehicleLocation> {
@@ -266,7 +269,7 @@ export default class EuropeanVehicle extends Vehicle {
       heading: data.head,
     };
 
-    return Promise.resolve(this._location);
+    return this._location;
   }
 
   public async startCharge(): Promise<string> {
@@ -293,7 +296,7 @@ export default class EuropeanVehicle extends Vehicle {
       return 'Start charge successful';
     }
 
-    return Promise.reject('Something went wrong!');
+    throw 'Something went wrong!';
   }
 
   public async stopCharge(): Promise<string> {
@@ -320,6 +323,6 @@ export default class EuropeanVehicle extends Vehicle {
       return 'Stop charge successful';
     }
 
-    return Promise.reject('Something went wrong!');
+    throw 'Something went wrong!';
   }
 }

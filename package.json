@@ -1,10 +1,10 @@
 {
   "name": "kuvork",
-  "version": "5.4.1",
+  "version": "5.4.2",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "scripts": {
+  "scripts": {    
     "build": "rollup -c rollup.config.js",
     "dev": "rollup -w -c rollup.config.js",
     "lint": "eslint ./lib --ext .js,.jsx,.ts,.tsx",

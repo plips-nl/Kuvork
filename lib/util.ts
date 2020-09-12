@@ -1,5 +1,9 @@
 export const getTempCode = (temperature: number): string => {
   switch (temperature) {
+    case 14.0:
+      return '00H';
+    case 14.5:
+      return '01H';
     case 15.0:
       return '02H';
     case 15.5:
@@ -63,7 +67,7 @@ export const getTempCode = (temperature: number): string => {
     case 30.0:
       return '20H';
     default:
-      throw new Error('temperature out of bounds! min: 15.0* max: 30*, max step: 0.5');
+      throw new Error('temperature out of bounds! min: 14.0* max: 30*, max step: 0.5');
   }
 };
 
@@ -136,6 +140,6 @@ export const getTempFromCode = (code: string): number => {
     case '20H':
       return 30.0;
     default:
-      throw new Error('temperature out of bounds! min: 15.0* max: 30*, max step: 0.5');
+      throw new Error('temperature out of bounds! min: 14.0* max: 30*, max step: 0.5');
   }
 };
