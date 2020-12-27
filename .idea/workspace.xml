@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ef84275-f6af-480b-94d9-07aab8ebd0c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/from bluelink to uvo 2.rtf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/constants/europe.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/constants/europe.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/controllers/european.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/controllers/european.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/interfaces/common.interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/interfaces/common.interfaces.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/logger.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/logger.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/vehicles/american.vehicle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vehicles/american.vehicle.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/vehicles/canadian.vehicle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vehicles/canadian.vehicle.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/vehicles/european.vehicle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vehicles/european.vehicle.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/vehicles/vehicle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vehicles/vehicle.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/update.sh" beforeDir="false" afterPath="$PROJECT_DIR$/update.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600154993140</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="full status request (EU only) added">
+      <created>1609067455358</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1609067455359</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
