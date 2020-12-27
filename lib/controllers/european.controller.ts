@@ -19,6 +19,8 @@ export class EuropeanController extends SessionController {
     logger.debug(`EU Controller created`);
 
     this.session.deviceId = this.uuidv4();
+    logger.debug(this.session.deviceId);
+
   }
 
   session: Session = {
@@ -29,7 +31,6 @@ export class EuropeanController extends SessionController {
     tokenExpiresAt: 0,
     controlTokenExpiresAt: 0,
   };
-
   private vehicles: Array<EuropeanVehicle> = [];
 
   private uuidv4(): string {
@@ -55,7 +56,7 @@ export class EuropeanController extends SessionController {
     formData.append('grant_type', 'refresh_token');
     formData.append('redirect_uri', 'https://www.getpostman.com/oauth2/callback'); // Oversight from Hyundai developers
     formData.append('refresh_token', this.session.refreshToken);
-
+    // console.log(formData.toString())
     const response = await got(ALL_ENDPOINTS.EU.token, {
       method: 'POST',
       headers: {
@@ -109,9 +110,10 @@ export class EuropeanController extends SessionController {
       // request cookie via got and store it to the cookieJar
       const cookieJar = new CookieJar();
       await got(ALL_ENDPOINTS.EU.session, { cookieJar });
-
+      logger.debug(`login cookie set`);
       // required by the api to set lang
       await got(ALL_ENDPOINTS.EU.language, { method: 'POST', body: '{"lang":"en"}', cookieJar });
+      logger.debug(`login language set`);
 
       const authCodeResponse = await got(ALL_ENDPOINTS.EU.login, {
         method: 'POST',
@@ -122,6 +124,10 @@ export class EuropeanController extends SessionController {
         },
         cookieJar,
       });
+      logger.debug(`login got authresponse`);
+
+      logger.debug(authCodeResponse.body)
+      logger.debug(authCodeResponse.body.resMsg)
 
       let authorizationCode;
       if (authCodeResponse) {
@@ -132,6 +138,7 @@ export class EuropeanController extends SessionController {
           throw new Error('@EuropeControllerLogin: AuthCode was not found');
         }
       }
+      logger.debug(`login got authresponse2`);
 
       const credentials = await pr.register(EU_CONSTANTS.GCMSenderID);
       const notificationReponse = await got(`${EU_BASE_URL}/api/v1/spa/notifications/register`, {
@@ -155,12 +162,15 @@ export class EuropeanController extends SessionController {
       if (notificationReponse) {
         this.session.deviceId = notificationReponse.body.resMsg.deviceId;
       }
+      logger.debug(`login got device id:`);
+      logger.debug(notificationReponse.body.resMsg.deviceId);
 
+      // get accessToken, refreshToken and tokenexpiresAt
       const formData = new URLSearchParams();
       formData.append('grant_type', 'authorization_code');
       formData.append('redirect_uri', ALL_ENDPOINTS.EU.redirectUri);
       formData.append('code', authorizationCode);
-
+      logger.debug(formData.toString())
       const response = await got(ALL_ENDPOINTS.EU.token, {
         method: 'POST',
         headers: {
@@ -175,6 +185,7 @@ export class EuropeanController extends SessionController {
         body: formData.toString(),
         cookieJar,
       });
+      logger.debug(`login got token`)
 
       if (response.statusCode !== 200) {
         throw `Get token failed: ${response.body}`;
@@ -185,8 +196,11 @@ export class EuropeanController extends SessionController {
         this.session.accessToken = 'Bearer ' + responseBody.access_token;
         this.session.refreshToken = responseBody.refresh_token;
         this.session.tokenExpiresAt = Math.floor(Date.now() / 1000 + responseBody.expires_in);
+        logger.debug('Bearer ' + responseBody.access_token);
+        logger.debug(responseBody.refresh_token);
+        logger.debug(responseBody.expires_in);
+        logger.debug('almost done');
       }
-
       return 'Login success';
     } catch (err) {
       throw err.message;
@@ -201,7 +215,7 @@ export class EuropeanController extends SessionController {
     if (this.session.accessToken === undefined) {
       throw 'Token not set';
     }
-
+    logger.debug('getvehicles about to get vehicles')
     const response = await got(`${EU_BASE_URL}/api/v1/spa/vehicles`, {
       method: 'GET',
       headers: {
@@ -210,6 +224,7 @@ export class EuropeanController extends SessionController {
       },
       json: true,
     });
+    logger.debug('getvehicles got vehicles')
 
     this.vehicles = [];
 

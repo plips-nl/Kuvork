@@ -3,7 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="5ef84275-f6af-480b-94d9-07aab8ebd0c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.js" beforeDir="false" afterPath="$PROJECT_DIR$/debug.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/from bluelink to uvo 2.rtf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/constants/europe.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/constants/europe.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/controllers/european.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/controllers/european.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/interfaces/common.interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/interfaces/common.interfaces.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/logger.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/logger.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/vehicles/american.vehicle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vehicles/american.vehicle.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/vehicles/canadian.vehicle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vehicles/canadian.vehicle.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/vehicles/european.vehicle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vehicles/european.vehicle.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/vehicles/vehicle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vehicles/vehicle.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/update.sh" beforeDir="false" afterPath="$PROJECT_DIR$/update.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,7 +24,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1eoF6XJYBNeu6lVTizQzbe0sUPw" />
   <component name="ProjectViewState">
@@ -23,6 +34,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -135,7 +147,28 @@
       <option name="project" value="LOCAL" />
       <updated>1599722356105</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="bumped up to Bluelinky 5.2.0:&#10;Add error event and update tests&#10;Add charge control to eu vehicles&#10;Make refresh_token work in EU controller&#10;Unify expiry for control token&#10;Enhance status call&#10;Update rollup plugins&#10;Fix consistency for async return values">
+      <created>1599890927545</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1599890927545</updated>
+    </task>
+    <task id="LOCAL-00016" summary="New call for unparsed status">
+      <created>1600154918958</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1600154918958</updated>
+    </task>
+    <task id="LOCAL-00017" summary="bumped up to Bluelinky 5.2.0:&#10;Add error event and update tests&#10;Add charge control to eu vehicles&#10;Make refresh_token work in EU controller&#10;Unify expiry for control token&#10;Enhance status call&#10;Update rollup plugins&#10;Fix consistency for async return values">
+      <created>1600154993140</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1600154993140</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -149,38 +182,9 @@
     <MESSAGE value="change for location API in eg the Niro plugin hybrid" />
     <MESSAGE value="added start and stop charging calls for (PH)EVs'" />
     <MESSAGE value="corrected bugs according to issue 63 of BlueLinky&#10;renamed EV battery status to batteryChargeHV" />
-    <option name="LAST_COMMIT_MESSAGE" value="corrected bugs according to issue 63 of BlueLinky&#10;renamed EV battery status to batteryChargeHV" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="1050" y="394" width="761" height="427" key="#com.intellij.ide.actionMacro.EditMacrosDialog" timestamp="1594983958572">
-      <screen x="0" y="23" width="1920" height="1004" />
-    </state>
-    <state x="1050" y="394" width="761" height="427" key="#com.intellij.ide.actionMacro.EditMacrosDialog/0.23.1920.1004@0.23.1920.1004" timestamp="1594983958572" />
-    <state x="1680" y="-223" width="2560" height="1364" key="CommitChangelistDialog2" timestamp="1599722350591">
-      <screen x="1680" y="-223" width="2560" height="1364" />
-    </state>
-    <state x="0" y="23" width="1920" height="1004" key="CommitChangelistDialog2/0.23.1920.1004@0.23.1920.1004" timestamp="1598880819254" />
-    <state x="1680" y="-223" width="2560" height="1364" key="CommitChangelistDialog2/1680.-223.2560.1364/0.23.1680.1027@1680.-223.2560.1364" timestamp="1599722350591" />
-    <state x="0" y="23" key="CommitChangelistDialog2/1680.23.1920.1057/0.23.1680.974@0.23.1680.974" timestamp="1595076537553" />
-    <state x="2707" y="216" key="Vcs.Push.Dialog.v2" timestamp="1599722366388">
-      <screen x="1680" y="-223" width="2560" height="1364" />
-    </state>
-    <state x="2707" y="216" key="Vcs.Push.Dialog.v2/1680.-223.2560.1364/0.23.1680.1027@1680.-223.2560.1364" timestamp="1599722366388" />
-    <state x="3056" y="375" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599721950210">
-      <screen x="1680" y="-223" width="2560" height="1364" />
-    </state>
-    <state x="1032" y="463" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1920.1004@0.23.1920.1004" timestamp="1598880769202" />
-    <state x="3056" y="375" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1680.-223.2560.1364/0.23.1680.1027@1680.-223.2560.1364" timestamp="1599721950210" />
-    <state x="129" y="154" width="1296" height="715" key="find.popup" timestamp="1599489646214">
-      <screen x="0" y="23" width="1920" height="1004" />
-    </state>
-    <state x="285" y="292" width="1359" height="691" key="find.popup/0.23.1680.974@0.23.1680.974" timestamp="1598382141740" />
-    <state x="129" y="154" width="1296" height="715" key="find.popup/0.23.1920.1004@0.23.1920.1004" timestamp="1599489646214" />
-    <state x="2655" y="198" width="1450" height="745" key="find.popup/1680.-223.2560.1364/0.23.1680.1027@1680.-223.2560.1364" timestamp="1596034318433" />
-    <state x="2655" y="198" width="1450" height="787" key="find.popup/1680.-246.2560.1440/0.0.1680.1050@1680.-246.2560.1440" timestamp="1596036584770" />
-    <state x="2655" y="198" width="1450" height="787" key="find.popup/1680.-246.2560.1440/0.23.1680.1027@1680.-246.2560.1440" timestamp="1596034703438" />
-    <state x="555" y="257" width="846" height="574" key="find.popup/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595089813783" />
-    <state x="555" y="274" width="846" height="562" key="find.popup/1680.23.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595090339850" />
-    <state x="827" y="261" width="574" height="532" key="find.popup/1680.23.1920.1057/0.23.1680.974@0.23.1680.974" timestamp="1595077090884" />
+    <MESSAGE value="New call for unparsed status" />
+    <MESSAGE value="bumped up to Bluelinky 5.2.0:&#10;Add error event and update tests&#10;Add charge control to eu vehicles&#10;Make refresh_token work in EU controller&#10;Unify expiry for control token&#10;Enhance status call&#10;Update rollup plugins&#10;Fix consistency for async return values" />
+    <MESSAGE value="full status request (EU only) added" />
+    <option name="LAST_COMMIT_MESSAGE" value="full status request (EU only) added" />
   </component>
 </project>

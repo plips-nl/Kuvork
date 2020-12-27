@@ -64,7 +64,7 @@ class BlueLinky extends EventEmitter {
 
     try {
       const response = await this.controller.login();
-
+      logger.debug('logged in')
       // get all cars from the controller
       this.vehicles = await this.controller.getVehicles();
 
