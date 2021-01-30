@@ -1,6 +1,6 @@
 import * as winston from 'winston';
 
-const defaultLevel = process.env.LOG_LEVEL || 'debug';
+const defaultLevel = process.env.LOG_LEVEL || 'info';
 const { colorize, json, combine, timestamp, printf } = winston.format;
 
 const myFormat = printf(({ level, message, timestamp }) => {

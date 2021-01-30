@@ -60,11 +60,10 @@ class BlueLinky extends EventEmitter {
   }
 
   public async login(): Promise<string> {
-    logger.debug('loggin into to API');
 
     try {
       const response = await this.controller.login();
-      logger.debug('logged in')
+
       // get all cars from the controller
       this.vehicles = await this.controller.getVehicles();
 

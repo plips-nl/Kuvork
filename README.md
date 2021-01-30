@@ -24,11 +24,34 @@ const client = new BlueLinky({
 
 client.on('ready', async () => {
   const vehicle = client.getVehicle('5NMS55555555555555');
-  const response = await vehicle.lock();
-  console.log(response);
+  try {
+    const response = await vehicle.lock();
+    console.log(response);
+  } catch (err) {
+    // log the error from the command invocation 
+  }
+});
+
+client.on('error', async (err) => {
+  // something went wrong with login
 });
 
 ```
+
+## Debug locally
+Ensure you have a `config.json` that matches the structure of the following, with your account details
+
+```json
+{
+  "username": "email",
+  "password": "password",
+  "pin": "ping",
+  "vin": "vin"
+}
+```
+Run an install for all the dependencies, `npm install`
+
+Now you can invoke the debug.ts script with `npm run debug`
 
 ## Documentation
 Checkout out the [bluelinky-docs](https://hacksore.github.io/bluelinky-docs/) for more info.
@@ -41,22 +64,7 @@ Checkout out the [bluelinky-docs](https://hacksore.github.io/bluelinky-docs/) fo
 - Status
 
 ## Supported Regions
-| [Regions](https://github.com/Hacksore/bluelinky/wiki/Regions) | Current Status |
-|-----------|--------------|
-| USA       | ✅      |
-| Canada    | ✅      |
-| Europe    | ✅      |
-| Korea     | ▯▯▯▯▯▯  |
-| Australia | [See #9](https://github.com/Hacksore/bluelinky/issues/9)  |
-
+| [Regions](https://github.com/Hacksore/bluelinky/wiki/Regions) 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
-
-## Contributors
-
-[altagir](https://github.com/altagir) - Canada wizard 🧙‍♂️
-
-[SondreNjaastad](https://github.com/SondreNjaastad) - Europe wizard 🧙‍♂️
-
-[aleGuardiola](https://github.com/aleGuardiola) - Fixed generation one cars 😎
