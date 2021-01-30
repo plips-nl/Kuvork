@@ -2,7 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ef84275-f6af-480b-94d9-07aab8ebd0c8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__tests__/bluelinky.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__tests__/controller.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__tests__/vehicle.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/constants/america.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/constants/america.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/constants/canada.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/constants/canada.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/controllers/american.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/controllers/american.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/controllers/canadian.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/controllers/canadian.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/controllers/european.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/controllers/european.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/interfaces/common.interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/interfaces/common.interfaces.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/logger.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/logger.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/util.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/vehicles/american.vehicle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vehicles/american.vehicle.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/vehicles/canadian.vehicle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vehicles/canadian.vehicle.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/vehicles/european.vehicle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vehicles/european.vehicle.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/vehicles/vehicle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vehicles/vehicle.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609067455359</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="full status request (EU only) added">
+      <created>1609067542122</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1609067542122</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
