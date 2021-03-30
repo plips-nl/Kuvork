@@ -10,10 +10,9 @@ import { getBrandEnvironment, AmericaBrandEnvironment } from '../constants/ameri
 
 import { VehicleRegisterOptions } from '../interfaces/common.interfaces';
 import { manageBluelinkyError } from '../tools/common.tools';
-import { REGIONS } from '../constants';
 
 export interface AmericanBlueLinkyConfig extends BlueLinkyConfig {
-  region: REGIONS.US;
+  region: 'US';
 }
 
 export class AmericanController extends SessionController<AmericanBlueLinkyConfig> {
@@ -43,6 +42,7 @@ export class AmericanController extends SessionController<AmericanBlueLinkyConfi
             'refresh_token': this.session.refreshToken,
           },
           headers: {
+            'User-Agent': 'PostmanRuntime/7.26.10',
             'client_secret': this.environment.clientSecret,
             'client_id': this.environment.clientId,
           },
